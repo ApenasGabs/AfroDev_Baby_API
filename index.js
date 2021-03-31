@@ -6,5 +6,5 @@ app.listen(3000, () => console.log('servidor rodando na porta 3000'))
 
 
 app.get('/', (req,resp)=>{
-    resp.send('servidor ok')
+    resp.send('Servidor ta monstro 😎')
 } );
