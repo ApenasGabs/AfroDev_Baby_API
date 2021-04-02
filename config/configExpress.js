@@ -3,7 +3,7 @@ const consign = require('consign');
 
 module.exports = () => {
     const app = express()
-    app.use(bodyParser.json());
+    app.use(express.json());
     consign()
         .include('controllers')
         .into(app)
