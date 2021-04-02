@@ -4,15 +4,15 @@ const Tabelas = require('./infra/tabelas');
 
 
 conexao.connect(error => {
-    if(error){
+    if (error) {
         throw error;
     }
     Tabelas.init(conexao)
 
     app = configExpress();
-    
+
     app.listen(3000, () => {
-        console.log('servidor rodando na porta 3000')
+        console.log('servidor ta montro 😎')
     });
 });
 
